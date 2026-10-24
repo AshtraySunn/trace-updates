@@ -3,8 +3,8 @@
 Ce journal présente uniquement des étapes générales d'un projet indépendant. Il ne décrit ni les activités réelles des utilisateurs, ni le fonctionnement interne d'un service opérationnel.
 
 ## 24 octobre 2026
-- **Vitrine publique :** présentation du projet et de sa feuille de route sur GitHub.
-- **Historique et navigation :** poursuite des tests sur la consultation des journées et des journaux, avec des données fictives.
+- **Vitrine publique :** présentation entièrement harmonisée avec l'identité visuelle du logiciel : TRACE/, bleu nuit, accents rouges et galerie de trois interfaces reconstituées avec des données fictives et des rues parisiennes utilisées uniquement comme exemples.
+- **CHRONO-ISOLATION :** un correctif de séparation des journaux entre journées a passé les tests en environnement local et les essais navigateur fictifs (**BROWSER_GO**). Il reste à auditer indépendamment avant toute mise en production ; aucune mise en ligne de ce correctif n'est annoncée.
 - **Adressage :** évaluation locale de propositions de numéros avec indication de confiance ; aucun déploiement de cette évolution n'est annoncé.
 
 ## 23 octobre 2026
