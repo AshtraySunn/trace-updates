@@ -5,7 +5,7 @@
 ## Journal de bord et historiques
 
 - **Évalué :** saisie et lecture chronologique d'événements fictifs.
-- **En amélioration :** changement de journée, conservation et consultation des historiques.
+- **Validé localement, non déployé :** correctif visant à isoler les journaux des journées successives, avec conservation des historiques ; revue indépendante et déploiement encore nécessaires.
 - **En amélioration :** suivi partagé, reconnexion et gestion des données différées.
 
 ## Contexte d'adresse
