@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040e1a">
+  <meta name="description" content="TRACE — Traitement Rapide des Actions et Chronologie d'Équipage. Découvrez la vision, l'interface et les évolutions d'un projet logiciel indépendant.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="TRACE / La chronologie au service du terrain">
+  <meta property="og:description" content="Terrain. Action. Mémoire. Une chronologie conçue pour garder le fil des événements. Vitrine publique d'un projet indépendant.">
+  <meta property="og:url" content="https://ashtraysunn.github.io/trace-updates/">
+  <link rel="canonical" href="https://ashtraysunn.github.io/trace-updates/">
+  <meta name="robots" content="noindex,follow">
+  <title>TRACE / La chronologie au service du terrain</title>
+  <style>
+    :root{color-scheme:dark;--bg:#030d17;--bg2:#071523;--panel:#081c2e;--panel2:#0b2237;--stroke:#24445d;--stroke2:#153047;--text:#f5f8ff;--muted:#a6b9ce;--subtle:#7192ac;--red:#ff1139;--red2:#cb0c30;--blue:#238dff;--green:#1bdc9c;--orange:#ff772c;--gold:#ffc03d;--violet:#966aff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,summary:focus-visible{outline:2px solid var(--red);outline-offset:5px}.container{width:min(1200px,calc(100% - 48px));margin:auto}
+    .skip-link{position:fixed;left:18px;top:-120px;background:white;color:#07121c;padding:12px 18px;z-index:50}.skip-link:focus{top:12px}
+    .site-header{position:relative;z-index:10;border-bottom:1px solid #24425b7e;background:#061320f4}.header-content{min-height:83px;display:flex;justify-content:space-between;align-items:center;gap:20px}.logo{display:inline-flex;align-items:center;color:white;font-size:29px;font-weight:950;letter-spacing:-.08em;line-height:1;transform:skew(-5deg);white-space:nowrap}.logo b{color:var(--red);font-weight:1000;display:inline-block;transform:skew(-8deg);font-size:1.35em;margin-left:2px}.header-tag{font-size:9px;color:#8daecb;letter-spacing:.27em;font-weight:800;margin-left:22px;white-space:nowrap}.header-brand{display:flex;align-items:center}.nav{display:flex;gap:33px;align-items:center}.nav a{font-size:12px;font-weight:750;letter-spacing:.035em;color:#d4e1ed}.nav a:hover{color:white}.header-cta{border:1px solid #526a7d;padding:10px 14px;border-radius:5px;font-size:12px;font-weight:800;white-space:nowrap}.header-cta:hover{border-color:var(--red);color:white}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 79% 28%,#10406356,transparent 46%),linear-gradient(160deg,#061522,#020912 74%);border-bottom:1px solid #294259}.hero:after{content:"";position:absolute;pointer-events:none;inset:0;background:linear-gradient(90deg,#040d1700 20%,#04111e15 90%)}.contours{position:absolute;width:850px;max-width:none;right:-210px;top:0;opacity:.22;stroke:#4c7da0;fill:none;stroke-width:.85;pointer-events:none}.hero-grid{position:relative;z-index:1;min-height:715px;display:grid;grid-template-columns:1fr 1.04fr;align-items:center;gap:32px;padding:74px 0 85px}
+    .eyebrow{color:#b6cddd;letter-spacing:.28em;font-size:10px;font-weight:800;display:flex;gap:14px;align-items:center;text-transform:uppercase}.redline{width:26px;height:3px;background:var(--red);display:inline-block}.hero h1{font-size:clamp(48px,5.5vw,78px);line-height:1.055;font-weight:880;letter-spacing:-.058em;margin:30px 0 25px;max-width:660px}.hero h1 em{color:var(--red);font-style:normal}.hero-lead{font-size:18px;color:#c1d4e6;max-width:560px;line-height:1.8;margin:0}.hero-signature{font-size:11px;color:#86aac7;letter-spacing:.28em;font-weight:750;margin-top:30px}.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:35px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:15px;font-size:12px;letter-spacing:.04em;font-weight:850;padding:15px 21px;border-radius:7px}.btn-red{background:var(--red);box-shadow:0 10px 34px #b8002b30}.btn-red:hover{background:#ff3157}.btn-outline{border:1px solid #53718a;background:#071b2b}.btn-outline:hover{border-color:#d8e6f7}.hero-disclaimer{margin-top:35px;font-size:12px;color:#a4bace;max-width:570px;border-left:2px solid #54738c;padding-left:14px}
+    .showcase{position:relative;min-height:610px;display:flex;align-items:center;justify-content:center}.showcase:before{content:"";position:absolute;width:470px;height:470px;max-width:100%;border:1px dashed #31526d65;border-radius:50%;box-shadow:0 0 0 88px #1c426913,0 0 0 150px #1a45660e}.phone{width:330px;background:#020a14;border:6px solid #243f56;box-shadow:0 32px 75px #0009,inset 0 0 0 1px #7aa0b455;border-radius:38px;padding:14px 12px 17px;position:relative;z-index:2;transform:rotate(-2deg)}.phone:before{content:"";position:absolute;top:0;left:95px;right:95px;height:17px;background:#00070c;border-radius:0 0 15px 15px}.phone-screen{background:linear-gradient(#041525,#030d19);min-height:544px;border-radius:25px;overflow:hidden}.statusbar{display:flex;justify-content:space-between;padding:13px 14px 9px;font-size:10px;font-weight:800;color:#dce7f3}.appbar{display:flex;align-items:center;justify-content:space-between;padding:5px 17px 12px;border-bottom:1px solid #1a3448}.appbar .mini-logo{font-size:22px;letter-spacing:-.085em;font-weight:950;font-style:italic}.mini-logo span{color:var(--red)}.appbar .dots{letter-spacing:.12em;color:#92b1c9}.app-tag{font-size:7px;letter-spacing:.26em;color:#8aaccc;margin-top:-4px}.crew{margin:13px 12px 10px;padding:10px 12px;border:1px solid #284e65;border-radius:8px;background:#082035;display:flex;justify-content:space-between;align-items:center}.crew strong{font-size:13px;display:block}.crew .sub{font-size:9px;color:#abc0d0;display:block}.online{font-size:9px;color:#79f0bd;display:flex;gap:5px;align-items:center}.online:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green)}.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;margin:0 12px 10px}.tabs span{border:1px solid #233e53;border-radius:5px;text-align:center;padding:6px 0;font-size:9px;font-weight:750}.tabs span.selected{background:#0956a4;border-color:#2e91ff}.mode{margin:0 12px 10px;padding:14px 14px;background:radial-gradient(circle at 95% 15%,#1b577844,transparent 60%),#092239;border:1px solid #294c67;border-radius:8px}.mode small{font-size:9px;letter-spacing:.13em;color:#83b2d6}.mode strong{display:block;margin-top:1px;font-size:16px}.actions{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:0 12px}.act{height:76px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;padding:11px;border:1px solid #31556e;border-radius:8px;background:#071e31;position:relative}.act .sym{font-size:20px;line-height:1;font-weight:900}.act .txt{font-size:9px;letter-spacing:.02em;font-weight:850}.act.blue .sym{color:var(--blue)}.act.green .sym{color:var(--green)}.act.red .sym{color:var(--red)}.act.orange .sym{color:var(--orange)}.act.gold .sym{color:var(--gold)}.act.violet .sym{color:var(--violet)}.act small{color:var(--green);font-size:7px;letter-spacing:.04em}.dock{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:8px;margin:14px 12px 4px}.dock>div{height:62px;border:1px solid #42667f;border-radius:8px;background:#0b263c;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;font-size:9px;font-weight:850}.dock .micro{background:var(--red);border-color:var(--red);box-shadow:0 0 26px #ff11393f}.dock-icon{font-size:23px;line-height:1}.phone-bottom{display:flex;justify-content:space-around;margin:13px 12px 0;border-top:1px solid #173045;padding:9px 0 0;color:#90b3d1;font-size:8px}.phone-bottom b{color:var(--red)}
+    .floating-chrono{z-index:3;position:absolute;bottom:8px;right:-8px;width:235px;border:1px solid #456e89;border-radius:12px;box-shadow:0 18px 54px #000b;background:#0a2135ee;padding:15px;transform:rotate(2deg)}.float-head{font-size:10px;letter-spacing:.15em;font-weight:850;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.float-head span{color:#85a6c2;font-size:9px;letter-spacing:0}.timeline-preview{position:relative;padding-left:20px;border-left:1px solid #44718e}.timeline-preview>div{padding:0 0 15px 14px;position:relative}.timeline-preview>div:last-child{padding-bottom:0}.timeline-preview>div:before{content:"";position:absolute;left:-25px;top:2px;width:9px;height:9px;border:3px solid var(--bg2);outline:2px solid var(--blue);border-radius:50%;background:var(--blue)}.timeline-preview>div:first-child:before{background:var(--red);outline-color:var(--red)}.timeline-preview small{display:block;color:#7daccd;font-size:9px}.timeline-preview strong{font-size:10px;display:block}.timeline-preview p{margin:2px 0 0;color:#9cb6cc;font-size:9px}
+    .microcopy{background:#061523;border-bottom:1px solid #2a465d}.microcopy .container{display:grid;grid-template-columns:repeat(3,1fr)}.microcopy .item{padding:24px 25px;border-right:1px solid #274056}.microcopy .item:first-child{padding-left:0}.microcopy .item:last-child{border:0}.microcopy .item strong{font-size:13px;display:block;letter-spacing:.09em}.microcopy .item span{font-size:11px;color:#92b3ce}
+    .section{padding:104px 0;border-bottom:1px solid #1a3449}.section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:34px}.kicker{font-size:10px;color:var(--red);font-weight:850;letter-spacing:.23em;text-transform:uppercase}.section h2{font-size:clamp(34px,4vw,53px);font-weight:850;letter-spacing:-.052em;line-height:1.13;margin:12px 0 0}.section-head p{max-width:440px;color:#aabed2;font-size:14px;margin:0}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.feature{background:linear-gradient(150deg,#0c2436,#071623);border:1px solid #28465d;border-radius:11px;padding:26px;min-height:231px;display:flex;flex-direction:column}.feature .num{font-size:10px;letter-spacing:.14em;color:#739ab7;font-weight:800}.feature .fi{width:49px;height:49px;border-radius:9px;background:#113452;border:1px solid #29567a;display:grid;place-items:center;font-size:22px;margin:19px 0}.feature:nth-child(1) .fi{color:var(--red);background:#3a1326}.feature:nth-child(2) .fi{color:var(--blue)}.feature:nth-child(3) .fi{color:var(--green);background:#10392f}.feature:nth-child(4) .fi{color:var(--orange);background:#38241b}.feature:nth-child(5) .fi{color:var(--violet);background:#2b2446}.feature:nth-child(6) .fi{color:var(--gold);background:#39301d}.feature h3{font-size:18px;margin:0 0 10px}.feature p{font-size:13px;color:#acc0d4;margin:0 0 17px;flex:1}.feature .st{font-size:10px;color:#8eacc4;font-weight:750;letter-spacing:.07em}
+    .workflow{background:#061725}.workflow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.workflow-card{border-top:2px solid #375f7c;background:#091f32;padding:22px 20px;border-radius:3px 3px 9px 9px}.workflow-card strong{color:var(--red);font:850 12px ui-monospace,monospace}.workflow-card h3{margin:19px 0 9px;font-size:17px}.workflow-card p{color:#9fb8ce;font-size:13px;margin:0}.workflow-note{margin-top:18px;background:#0a2233;border:1px solid #345773;padding:16px 21px;color:#b7cadb;font-size:13px}.workflow-note b{color:white}
+    .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}.safety-panel{background:radial-gradient(circle at 95% 0,#21507435,transparent 62%),#0b2233;border:1px solid #35536b;border-radius:12px;padding:33px}.safety-panel h3{margin:0 0 16px;font-size:21px}.safety-panel p{margin:0;color:#b1c5d7;font-size:14px;line-height:1.85}.safety-list{display:grid;gap:12px}.safety-list div{background:#071929;border:1px solid #26445d;padding:17px 20px;font-size:13px;color:#c6d5e4}.safety-list strong{color:#f2f7ff}
+    .update-list{display:grid;gap:12px}.update{display:grid;grid-template-columns:130px 1fr 120px;gap:24px;align-items:start;padding:24px 26px;border:1px solid #25445b;background:#091c2c;border-radius:9px}.update time{font-size:11px;color:#85aeca;letter-spacing:.1em;font-weight:800}.update strong{font-size:16px}.update p{color:#acc1d5;font-size:13px;margin:5px 0 0}.update-label{font-size:10px;font-weight:800;letter-spacing:.1em;color:#efc08b;text-align:right}.update-label.done{color:#91e5be}.more-link{display:inline-flex;gap:10px;font-size:12px;color:white;border-bottom:1px solid var(--red);padding:3px 0;margin-top:26px;font-weight:800}.more-link:hover{color:#ffb6c4}
+    .faq-list{max-width:850px;display:grid;gap:10px}.faq-list details{background:#091c2e;border:1px solid #264860;border-radius:9px;padding:0 19px}.faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:15px;align-items:center;padding:18px 0;font-weight:750;font-size:14px}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:"+";color:var(--red);font-size:24px;line-height:1}.faq-list details[open] summary:after{content:"−"}.faq-list details p{color:#aebfd1;font-size:13px;margin:0;padding:0 0 22px;max-width:760px}
+    .closing{background:radial-gradient(circle at right,#3d203d55,transparent 40%),#0d1b2a;border-top:1px solid #3a4b61;padding:70px 0}.closing-inner{display:flex;gap:25px;align-items:center;justify-content:space-between}.closing h2{font-size:clamp(35px,4vw,52px);line-height:1.12;letter-spacing:-.055em;margin:15px 0 10px}.closing h2 em{font-style:normal;color:var(--red)}.closing p{color:#a8bdd0;font-size:14px;margin:0}.footer{padding:43px 0 36px;background:#030a12}.footer-inner{display:flex;justify-content:space-between;gap:25px}.footer .logo{font-size:26px}.footer p,.footer small{display:block;color:#89a5bd;font-size:11px;margin:16px 0 0}.footer-links{display:flex;flex-wrap:wrap;gap:12px 25px;align-content:start;font-size:12px;color:#adbece}.footer-links a:hover{color:white}
+    @media(max-width:1060px){.header-tag{display:none}.hero-grid{grid-template-columns:.92fr 1fr}.hero h1{font-size:clamp(44px,5vw,65px)}.phone{width:300px}.floating-chrono{width:205px;right:-12px}.showcase{min-height:610px}.nav{gap:15px}}
+    @media(max-width:780px){.nav{display:none}.header-content{min-height:72px}.hero-grid{grid-template-columns:1fr;padding:65px 0 50px;gap:15px}.hero h1{max-width:650px}.showcase{min-height:630px}.floating-chrono{right:9%;bottom:0}.phone{width:330px}.section{padding:72px 0}.section-head{display:block}.section-head p{margin:20px 0 0}.feature-grid{grid-template-columns:repeat(2,1fr)}.workflow-grid{grid-template-columns:repeat(2,1fr)}.safety-grid{grid-template-columns:1fr}.closing-inner{display:block}.closing .btn{margin-top:26px}.footer-inner{display:block}.footer-links{margin-top:25px}}
+    @media(max-width:500px){.container{width:min(100% - 32px,1200px)}.logo{font-size:25px}.header-cta{font-size:10px;padding:9px 11px}.hero-grid{padding-top:49px}.hero h1{font-size:clamp(42px,11vw,58px)}.hero-lead{font-size:15px}.hero-signature{font-size:9px;letter-spacing:.22em}.hero-actions{gap:10px}.btn{width:100%}.showcase{min-height:590px;overflow:hidden;margin:0 -16px}.phone{width:300px;transform:rotate(-2deg) translateX(-15px)}.floating-chrono{width:177px;padding:11px;bottom:4px;right:1%;transform:rotate(2deg)}.float-head{font-size:9px}.microcopy .container{grid-template-columns:1fr}.microcopy .item,.microcopy .item:first-child{padding:12px 0;border-right:none;border-bottom:1px solid #29445b}.microcopy .item:last-child{border:none}.feature-grid{grid-template-columns:1fr}.feature{min-height:0}.workflow-grid{grid-template-columns:1fr 1fr;gap:9px}.workflow-card{padding:16px 12px}.workflow-card h3{font-size:14px}.workflow-card p{font-size:11px}.safety-panel{padding:23px}.update{grid-template-columns:1fr;gap:8px;padding:20px}.update-label{text-align:left}.closing{padding:58px 0}.footer-links{gap:14px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+    /* TRACE — galerie fidèle à la composition de l'interface mobile ; données 100 % fictives. */
+    .hero-grid{grid-template-columns:.8fr 1.2fr;gap:18px}
+    .hero h1{font-size:clamp(43px,4.9vw,71px)}
+    .showcase{min-height:665px;flex-direction:column;justify-content:center}
+    .showcase:before{width:500px;height:500px}
+    .demo-phones{position:relative;z-index:1;display:grid;grid-template-columns:.87fr 1.07fr .91fr;gap:8px;align-items:center;width:100%;max-width:710px}
+    .demo-frame{min-width:0;background:#020810;border:4px solid #294257;border-radius:29px;padding:8px 6px 9px;box-shadow:0 25px 55px #000b,inset 0 0 0 1px #62869b66;position:relative;overflow:hidden}
+    .demo-frame:before{content:"";position:absolute;top:2px;left:32%;right:32%;height:12px;background:#01050a;border-radius:0 0 13px 13px;z-index:2}
+    .demo-home{z-index:3;transform:scale(1.065);box-shadow:0 25px 70px #000e,0 0 36px #0c55821a}
+    .demo-login{transform:rotate(-3deg) translateX(5px)}.demo-chrono{transform:rotate(3deg) translateX(-5px)}
+    .demo-screen{border-radius:22px;background:#040e1c;min-height:550px;height:550px;display:flex;flex-direction:column;overflow:hidden}
+    .demo-status{display:flex;justify-content:space-between;align-items:center;padding:13px 10px 5px;font-weight:850;font-size:8px;letter-spacing:.03em;color:#edf5fc;flex-shrink:0}
+    .demo-logo{font-weight:1000;font-style:italic;letter-spacing:-.085em;white-space:nowrap;font-size:23px;color:#fff}.demo-logo span{color:#ff1038;font-size:1.3em;margin-left:1px}
+    .demo-subtitle{font-size:5px;letter-spacing:.14em;color:#dce7f1;line-height:1.8}
+    .login-visual{padding:35px 9px 22px;text-align:center;background:radial-gradient(ellipse at top,#1b314c 0,transparent 78%);border-bottom:1px solid #183045}.login-visual .demo-logo{font-size:29px}.login-visual p{font-size:7px;letter-spacing:.13em;font-weight:750;line-height:1.7;margin:18px -4px 0;color:#c2d2e5}
+    .login-panel{margin:15px 8px 0;padding:12px 10px 14px;background:#081726;border:1px solid #1b3549;border-radius:12px;display:flex;flex-direction:column;gap:5px}.login-panel>strong{font-size:13px}.login-panel>small{font-size:6px;letter-spacing:.09em;color:#91a9c0}.login-panel label{font-size:9px;font-weight:700;color:#cad9e7;margin-top:8px}.demo-input{border:1px solid #2b445a;border-radius:7px;font-size:8px;color:#95aabc;padding:11px 7px;background:#020b15}.demo-button{background:#441a24;border:1px solid #922a3d;text-align:center;border-radius:7px;padding:10px;font-weight:800;font-size:10px;margin-top:10px}.login-footer{font-size:7px;letter-spacing:.15em;font-weight:700;text-align:center;color:#91a8bc;margin:auto 0 23px}
+    .demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:5px 8px 10px}.demo-toolbar .demo-logo{font-size:21px}.demo-online{font-size:7px;color:#37d49d;white-space:nowrap;border:1px solid #163e41;border-radius:22px;padding:4px 6px}.demo-gear{font-size:18px;color:#a1b7ca}
+    .demo-crew{margin:0 8px 12px;background:#091929;border:1px solid #2b4052;border-radius:8px;padding:9px 9px;display:flex;align-items:center;justify-content:space-between;gap:4px}.demo-crew strong{font-size:9px;letter-spacing:.01em}.demo-active{font-size:7px;color:#25d09a;white-space:nowrap}
+    .demo-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;margin:0 8px 10px;background:#020914;border:1px solid #26374a;border-radius:8px;padding:4px 3px}.demo-tabs span,.demo-tabs b{text-align:center;padding:5px 0;font-size:7px;white-space:nowrap;color:#8fa4bc;font-weight:800}.demo-tabs b{border-radius:6px;background:#1e4476;color:white;border:1px solid #3c6dac}
+    .demo-mode{margin:0 8px 10px;border:1px solid #2b4760;border-radius:8px;padding:10px 10px;background:radial-gradient(ellipse at right,#173f6344,transparent 80%),#0a1a2a}.demo-mode small{display:block;font-size:7px;color:#98acc3;letter-spacing:.14em;font-weight:800}.demo-mode small span{color:#ff1543;font-size:12px}.demo-mode strong{font-size:13px;line-height:1.4}
+    .demo-actions{margin:0 8px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.demo-tile{border:1px solid #2d4b63;min-width:0;background:radial-gradient(ellipse at top,#17293b88,#050e1a);border-radius:11px;height:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px}.demo-tile b{font-size:25px;line-height:1}.demo-tile strong{font-size:8px;white-space:nowrap;letter-spacing:-.01em}.dt-blue b{color:#95c5ff}.dt-green b{color:#42c69f}.dt-red b{color:#ff5371}.dt-orange b{color:#ffa169}.dt-gold b{color:#ffc354}.dt-violet b{color:#b496e7}.dt-red{border-color:#603646}.dt-orange{border-color:#5e433b}.dt-gold{border-color:#625534}.dt-violet{border-color:#46415d}
+    .demo-dock{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:11px 6px 10px;margin-top:auto;border-top:1px solid #192d42;background:#030d1b}.demo-dock>div{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#afbed0;font-size:7px;font-weight:850;letter-spacing:.12em;gap:5px}.demo-dock>div>span{font-size:21px;line-height:1.3}.demo-dock>div:nth-child(2){color:#fff}.demo-dock i{font-style:normal;font-size:20px;color:white;background:#df2240;box-shadow:0 0 0 3px #753343;padding:2px;display:grid;place-items:center;width:42px;height:42px;border-radius:50%}
+    .chrono-head{display:flex;align-items:center;gap:7px;border-bottom:1px solid #192c40;padding:15px 8px 12px}.chrono-back{font-size:23px;color:#c9d3e1}.chrono-head>div{flex:1;min-width:0}.chrono-head strong{display:block;font-size:12px;letter-spacing:.22em}.chrono-head small{display:block;font-size:6px;color:#a6bbcd;letter-spacing:.07em}.chrono-head .demo-online{font-size:6px}
+    .chrono-events{padding:23px 6px 2px 9px;flex:1;overflow:hidden}.chrono-entry{display:grid;grid-template-columns:36px minmax(0,1fr);column-gap:11px;position:relative;padding:0 0 15px}.chrono-entry:after{content:"";position:absolute;left:41px;top:4px;bottom:-4px;border-left:1px solid #3b5269}.chrono-entry:last-child:after{bottom:13px}.chrono-entry:before{content:"";position:absolute;left:36px;top:5px;width:9px;height:9px;border-radius:50%;background:#df2444;z-index:1}.chrono-entry time{font-size:9px;font-weight:800;color:#d5e0eb;line-height:1.5}.chrono-entry>div{padding-left:7px;min-width:0}.chrono-entry b{font-size:9px;letter-spacing:.005em;display:block;line-height:1.6}.chrono-entry p{font-size:7px;color:#aebed0;margin:3px 0 0;line-height:1.55;overflow-wrap:anywhere}.chrono-entry p span{color:#f62950;margin-right:2px;font-size:10px}.chrono-vocal{border:1px solid #2c455d;border-radius:7px;background:#0b1b2d;color:#c6d7e6;font-size:7px;padding:9px 5px;margin-top:8px}.chrono-vocal span{float:right;color:#97b3cd}.chrono-compose{display:flex;gap:5px;align-items:center;padding:13px 7px;border-top:1px solid #182f44}.chrono-compose>span{flex:1;border:1px solid #2c4359;border-radius:6px;color:#7e99b2;background:#030e1b;font-size:8px;padding:12px 5px;white-space:nowrap}.chrono-compose b{background:#631b2b;border:1px solid #b12743;border-radius:7px;color:white;padding:8px 9px;font-size:16px}
+    .showcase-note{position:relative;z-index:5;margin:20px auto 0;color:#91aec5;text-align:center;font-size:8px;letter-spacing:.09em;font-weight:800;max-width:640px;line-height:1.7}
+    @media(max-width:1120px){.hero-grid{grid-template-columns:1fr}.hero h1{max-width:720px}.hero-lead{max-width:680px}.showcase{min-height:auto;padding:30px 0 20px}.demo-phones{max-width:680px}.demo-frame{border-radius:29px}}
+    @media(max-width:750px){.demo-phones{max-width:590px}.demo-screen{height:480px;min-height:480px}.demo-tile{height:73px}.demo-actions{gap:5px}.demo-crew{margin-bottom:7px}.demo-mode{margin-bottom:7px}.chrono-entry{padding-bottom:9px}}
+    @media(max-width:580px){.showcase{padding:15px 0 30px;overflow:hidden;margin:0 -16px}.demo-phones{grid-template-columns:1fr 1.05fr .96fr;width:690px;transform:scale(.73);transform-origin:top left;margin-right:-205px;margin-bottom:-150px}.demo-screen{height:550px;min-height:550px}.demo-tile{height:86px}.showcase-note{font-size:8px;max-width:340px;margin-top:15px;padding:0 12px}.hero-grid{padding-bottom:45px}}
+    @media(max-width:390px){.demo-phones{transform:scale(.62);margin-right:-256px;margin-bottom:-195px}}
+
+   .hero-trace{display:inline-block;font-size:.8em;font-weight:1000;font-style:italic;letter-spacing:-.085em}.hero-slash{color:var(--red)}
+  
+    /* v3 — aperçus sur des supports distincts, sans empilement ou compression */
+    .hero-grid{grid-template-columns:minmax(0,1fr) minmax(350px,.82fr);gap:60px;min-height:0;padding:88px 0 82px;align-items:center}
+    .hero h1{font-size:clamp(42px,4.2vw,65px);line-height:1.12;max-width:660px;margin:24px 0}
+    .hero h1 em{color:#f6f9ff;font-style:normal}
+    .hero-trace{font-size:.82em;margin-bottom:10px;display:inline-block}
+    .hero-slash{color:var(--red)}
+    .hero-lead{font-size:16px;line-height:1.8}
+    .hero-phone{min-height:0;display:flex;flex-direction:column;align-items:center;padding:12px 0;overflow:visible}
+    .hero-phone:before{width:395px;height:395px}
+    .hero-phone .demo-home{transform:none;z-index:2;width:350px;max-width:100%;border-radius:35px;padding:9px 7px 12px}
+    .hero-phone .demo-home:before{left:35%;right:35%}
+    .hero-phone .demo-screen{height:615px;min-height:615px}
+    .hero-phone .demo-toolbar .demo-logo{font-size:25px}
+    .hero-phone .demo-crew{margin:3px 10px 13px;padding:11px}
+    .hero-phone .demo-crew strong{font-size:12px}
+    .hero-phone .demo-tabs{margin:0 10px 13px}
+    .hero-phone .demo-tabs span,.hero-phone .demo-tabs b{font-size:9px}
+    .hero-phone .demo-mode{margin:0 10px 12px}
+    .hero-phone .demo-mode strong{font-size:18px}
+    .hero-phone .demo-actions{margin:0 10px;gap:9px}
+    .hero-phone .demo-tile{height:89px}
+    .hero-phone .demo-tile b{font-size:28px}
+    .hero-phone .demo-tile strong{font-size:10px}
+    .hero-phone .demo-dock{margin-top:auto;padding:15px 8px 12px}
+    .hero-phone .demo-dock>div{font-size:9px}
+    .hero-phone .showcase-note{font-size:10px;margin-top:20px;line-height:1.5;color:#a3b9cb}
+    .gallery-section{background:radial-gradient(ellipse at 45% 10%,#10355057,transparent 55%),#051320}
+    .gallery-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:45px}
+    .gallery-card{min-width:0;border:1px solid #2b485e;border-radius:16px;background:#081b2d;padding:24px 25px 30px;display:flex;align-items:center;flex-direction:column}
+    .gallery-label{width:100%;display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:22px}
+    .gallery-label span{font-size:12px;color:var(--red);font-weight:900;letter-spacing:.14em}
+    .gallery-label strong{font-size:12px;color:#a9c1d6}
+    .gallery-card .demo-frame{transform:none;width:340px;max-width:100%;border-radius:34px;padding:10px 8px 12px;box-shadow:0 20px 52px #000a}
+    .gallery-card .demo-screen{height:620px;min-height:620px}
+    .gallery-card .demo-login .login-visual{padding:50px 15px 32px}
+    .gallery-card .demo-login .login-visual .demo-logo{font-size:43px}
+    .gallery-card .demo-login .demo-subtitle{font-size:7px}
+    .gallery-card .demo-login .login-visual p{font-size:9px}
+    .gallery-card .demo-login .login-panel{margin:18px 12px 0;padding:17px 15px 20px}
+    .gallery-card .demo-login .login-panel>strong{font-size:20px}
+    .gallery-card .demo-login .login-panel>small{font-size:8px}
+    .gallery-card .demo-login .login-panel label{font-size:12px}
+    .gallery-card .demo-login .demo-input{font-size:11px;padding:13px 10px}
+    .gallery-card .demo-login .demo-button{font-size:13px}
+    .gallery-card .demo-login .login-footer{font-size:9px}
+    .gallery-card .chrono-head{padding:24px 12px 18px}
+    .gallery-card .chrono-head strong{font-size:17px}
+    .gallery-card .chrono-head small{font-size:9px}
+    .gallery-card .chrono-head .demo-online{font-size:9px;padding:5px 8px}
+    .gallery-card .chrono-events{padding:22px 12px 0}
+    .gallery-card .chrono-entry{grid-template-columns:42px minmax(0,1fr);column-gap:13px;padding:0 0 18px}
+    .gallery-card .chrono-entry time{font-size:11px;white-space:nowrap}
+    .gallery-card .chrono-entry>div{padding-left:9px}
+    .gallery-card .chrono-entry:after{left:48px}
+    .gallery-card .chrono-entry:before{left:43px}
+    .gallery-card .chrono-entry b{font-size:12px;white-space:nowrap}
+    .gallery-card .chrono-entry p{font-size:10px;line-height:1.55;overflow-wrap:normal;word-break:normal}
+    .gallery-card .chrono-vocal{font-size:10px;padding:10px 8px}
+    .gallery-card .chrono-compose{padding:14px 12px}
+    .gallery-card .chrono-compose>span{font-size:11px;padding:11px 8px}
+    .gallery-caption{font-size:13px;text-align:center;color:#afc0d2;line-height:1.65;max-width:345px;margin:22px 0 0}
+    .gallery-disclaimer{text-align:center;font-size:10px;letter-spacing:.1em;color:#85a8c3;font-weight:750;margin:28px 0 0}
+    @media(max-width:1000px){.hero-grid{grid-template-columns:1fr;gap:34px;padding:75px 0}.hero h1{font-size:clamp(42px,7vw,67px)}.hero-phone{padding:25px 0}.gallery-layout{gap:14px}.gallery-card{padding:18px 10px 26px}.gallery-card .demo-frame{width:325px}}
+    @media(max-width:735px){.gallery-layout{grid-template-columns:1fr;gap:23px;max-width:525px;margin:34px auto 0}.gallery-card{padding:20px 13px 28px}.gallery-card .demo-frame{width:340px}.gallery-label{padding:0 4px}.gallery-section{padding:70px 0}.hero-grid{gap:17px;padding:56px 0 63px}.hero h1{font-size:clamp(40px,9vw,60px)}}
+    @media(max-width:390px){.hero-phone .demo-home{width:320px}.gallery-card .demo-frame{width:310px}.gallery-card .chrono-entry b{font-size:11px}.gallery-card .chrono-entry p{font-size:9px}.hero-phone .demo-tile strong{font-size:9px}.gallery-section .section-head h2{font-size:34px}}
+    
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="container header-content">
+    <div class="header-brand"><a class="logo" href="#accueil" aria-label="TRACE, accueil">TRACE<b>/</b></a><span class="header-tag">TERRAIN · ACTION · MÉMOIRE</span></div>
+    <nav class="nav" aria-label="Navigation principale"><a href="#vision">Le projet</a><a href="#interface">Interface</a><a href="#fonctions">Fonctions</a><a href="#evolution">Évolutions</a></nav>
+    <a class="header-cta" href="ROADMAP.md">FEUILLE DE ROUTE ↗</a>
+  </div></header>
+  <main id="contenu">
+    <section class="hero" id="accueil">
+      <svg class="contours" aria-hidden="true" viewBox="0 0 850 900"><path d="M80 160C250 20 400 110 520 120S730 50 880 80M30 230C230 70 370 150 515 200S745 105 875 145M-20 300C200 120 330 245 475 258S750 165 895 245M-25 366C170 210 350 310 485 335S730 250 890 300M-50 430C170 270 315 395 490 416S720 332 880 380M-50 500C150 330 330 470 500 482S755 418 910 445M-45 570C150 400 320 535 505 554S770 500 910 505M-35 642C120 478 310 605 510 621S775 570 920 578M-35 715C125 560 305 681 530 690S785 654 930 659M-30 780C150 620 325 751 540 770S792 722 935 735"/></svg>
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="redline"></span> PROJET INDÉPENDANT · PILOTE PRIVÉ</div>
+          <h1><span class="hero-trace">TRACE<span class="hero-slash">/</span></span><br>La chronologie<br>au service <em>du terrain.</em></h1>
+          <p class="hero-lead">TRACE — <strong>Traitement Rapide des Actions et Chronologie d'Équipage</strong> — est conçu pour saisir les actions, suivre leur déroulement et retrouver un historique clair.</p>
+          <div class="hero-signature">TERRAIN &nbsp; / &nbsp; ACTION &nbsp; / &nbsp; MÉMOIRE</div>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="#interface">DÉCOUVRIR L'INTERFACE <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="#evolution">VOIR LES AVANCÉES <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-disclaimer">Présentation publique uniquement. L'application n'est pas accessible depuis ce site. Illustration d'interface et événements entièrement fictifs.</p>
+        </div>
+        <div class="showcase hero-phone" aria-label="Aperçu reconstitué de l'interface Terrain TRACE">
+          <article class="demo-frame demo-home" aria-label="Aperçu fictif du terrain">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="demo-toolbar"><div class="demo-logo">TRACE<span>/</span></div><span class="demo-online">● En ligne</span><span class="demo-gear">⚙</span></div>
+                <div class="demo-crew"><strong>ÉQUIPAGE DÉMO</strong><span class="demo-active">● ACTIF</span></div>
+                <div class="demo-tabs"><b>MO</b><span>SO</span><span>VO</span><span>SECU</span><span>SERV</span><span>PERSO</span></div>
+                <div class="demo-mode"><small>MODE <span>/</span></small><strong>Maintien de l'ordre</strong></div>
+                <div class="demo-actions">
+                  <div class="demo-tile dt-blue"><b>⌖</b><strong>IMPLANTATION</strong></div>
+                  <div class="demo-tile dt-green"><b>◎</b><strong>LOCALISATION</strong></div>
+                  <div class="demo-tile dt-red"><b>⌃</b><strong>ASSAUT</strong></div>
+                  <div class="demo-tile dt-orange"><b>⌗</b><strong>INTERPELLATION</strong></div>
+                  <div class="demo-tile dt-gold"><b>▣</b><strong>GRENADE</strong></div>
+                  <div class="demo-tile dt-violet"><b>✣</b><strong>LBD</strong></div>
+                </div>
+                <div class="demo-dock"><div><span>▣</span>PHOTO</div><div><i aria-hidden="true">♩</i>MICRO</div><div><span>▤</span>CHRONO</div></div>
+              </div>
+            </article>
+          <p class="showcase-note">INTERFACE RECONSTITUÉE · DONNÉES FICTIVES</p>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery-section" id="interface" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head"><div><span class="kicker">01 / APERÇUS DU PRODUIT</span><h2 id="gallery-title">Une interface pensée<br>pour le terrain.</h2></div><p>Captures reconstituées à partir de l'identité visuelle réelle de TRACE. Les événements, lieux et utilisateurs de démonstration sont fictifs.</p></div>
+        <div class="gallery-layout">
+          <div class="gallery-card">
+            <div class="gallery-label"><span>01 / CONNEXION</span><strong>Accès privé</strong></div>
+            <article class="demo-frame demo-login" aria-label="Aperçu fictif de la connexion">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="login-visual"><div class="demo-logo">TRACE<span>/</span></div><div class="demo-subtitle">TRAITEMENT RAPIDE DES ACTIONS<br>ET CHRONOLOGIE D'ÉQUIPAGE</div><p>LA CHRONOLOGIE AU SERVICE DU TERRAIN.</p></div>
+                <div class="login-panel"><strong>Connexion</strong><small>ACCÈS RÉSERVÉ AUX PERSONNELS HABILITÉS</small><label>Matricule</label><div class="demo-input">◌ &nbsp; Votre matricule</div><label>Code d'accès</label><div class="demo-input">♙ &nbsp; ••••••••••</div><div class="demo-button">Se connecter &nbsp; →</div></div>
+                <div class="login-footer">UNE TRACE FIABLE À CHAQUE ACTION.</div>
+              </div>
+            </article>
+            <p class="gallery-caption">L'écran d'accueil d'une application réservée aux utilisateurs habilités.</p>
+          </div>
+          <div class="gallery-card">
+            <div class="gallery-label"><span>02 / CHRONO</span><strong>Journal d'activité</strong></div>
+            <article class="demo-frame demo-chrono" aria-label="Aperçu fictif de la chronologie à Paris">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="chrono-head"><span class="chrono-back">‹</span><div><strong>CHRONO</strong><small>EXEMPLE FICTIF · PARIS</small></div><span class="demo-online">● En ligne</span></div>
+                <div class="chrono-events">
+                  <div class="chrono-entry"><time>09:15</time><div><b>IMPLANTATION</b><p><span>⌖</span> Rue de Rivoli, 75001 Paris</p></div></div>
+                  <div class="chrono-entry"><time>09:26</time><div><b>INTERPELLATION</b><p><span>⌖</span> Place de la République, Paris</p></div></div>
+                  <div class="chrono-entry"><time>10:12</time><div><b>ASSAUT</b><p><span>⌖</span> Boulevard Saint-Germain, 75005 Paris</p><div class="chrono-vocal">▶ &nbsp; Vocal <span>0:02</span></div></div>
+                  <div class="chrono-entry"><time>10:43</time><div><b>GRENADE MP7</b><p><span>⌖</span> Avenue des Champs-Élysées, Paris</p></div></div>
+                  <div class="chrono-entry"><time>11:08</time><div><b>IMPLANTATION</b><p><span>⌖</span> Avenue de Clichy, 75017 Paris</p></div></div>
+                </div>
+                <div class="chrono-compose"><span>Écrire un message…</span><b>↑</b></div>
+              </div>
+              </div>
+            </article>
+            <p class="gallery-caption">Exemples d'événements et de rues à Paris, sans aucun journal opérationnel.</p>
+          </div>
+        </div>
+        <p class="gallery-disclaimer">AUCUN MATRICULE RÉEL · AUCUNE AFFECTATION · AUCUNE GÉOLOCALISATION OPÉRATIONNELLE</p>
+      </div>
+    </section>
+    <div class="microcopy" id="vision"><div class="container">
+      <div class="item"><strong>01 / LE TERRAIN</strong><span>Une saisie pensée pour l'action</span></div>
+      <div class="item"><strong>02 / L'INFORMATION</strong><span>Un fil commun, lisible et structuré</span></div>
+      <div class="item"><strong>03 / LA MÉMOIRE</strong><span>Un historique à retrouver et vérifier</span></div>
+    </div></div>
+    <section class="section container" id="fonctions">
+      <div class="section-head"><div><span class="kicker">01 / LES FONCTIONNALITÉS</span><h2>Conçu pour agir.<br>Pensé pour retracer.</h2></div><p>Une interface sombre, des actions immédiatement identifiables, et une chronologie comme point de repère. Les éléments présentés sont en développement ou en évaluation.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><span class="num">MODULE / 01</span><span class="fi" aria-hidden="true">◉</span><h3>CHRONO</h3><p>Retrouver les événements dans leur ordre, avec leurs heures et les informations associées.</p><span class="st">PARCOURS TESTÉS</span></article>
+        <article class="feature"><span class="num">MODULE / 02</span><span class="fi" aria-hidden="true">⌖</span><h3>ACTIONS TERRAIN</h3><p>Rendre l'enregistrement d'une action lisible et accessible sur un écran mobile.</p><span class="st">EN ÉVALUATION</span></article>
+        <article class="feature"><span class="num">MODULE / 03</span><span class="fi" aria-hidden="true">◎</span><h3>ÉQUIPAGES ET JOURNÉES</h3><p>Organiser le contexte d'une journée sans mélanger les historiques d'activités.</p><span class="st">EN AMÉLIORATION</span></article>
+        <article class="feature"><span class="num">MODULE / 04</span><span class="fi" aria-hidden="true">↗</span><h3>ADRESSES INDICATIVES</h3><p>Associer un repère de localisation, avec une indication explicite lorsque l'adresse est estimée.</p><span class="st">QUALIFICATION EN COURS</span></article>
+        <article class="feature"><span class="num">MODULE / 05</span><span class="fi" aria-hidden="true">▤</span><h3>SUIVI PARTAGÉ</h3><p>Consulter les évolutions dans un contexte autorisé, avec des corrections traçables.</p><span class="st">ESSAIS SUR DONNÉES FICTIVES</span></article>
+        <article class="feature"><span class="num">MODULE / 06</span><span class="fi" aria-hidden="true">▣</span><h3>MÉDIAS ET CONTEXTE</h3><p>Conserver les éléments utiles à la compréhension d'un événement sans surcharger le fil.</p><span class="st">EN DÉVELOPPEMENT</span></article>
+      </div>
+    </section>
+    <section class="section workflow"><div class="container">
+      <div class="section-head"><div><span class="kicker">02 / LE PARCOURS</span><h2>Chaque action<br>trouve sa place.</h2></div><p>Du premier événement à l'historique, le parcours vise une lecture simple, sans confusion entre les journées.</p></div>
+      <div class="workflow-grid"><article class="workflow-card"><strong>01</strong><h3>Ouvrir la journée</h3><p>Situer les actions dans leur contexte d'activité.</p></article><article class="workflow-card"><strong>02</strong><h3>Enregistrer</h3><p>Saisir une action et son heure de manière structurée.</p></article><article class="workflow-card"><strong>03</strong><h3>Suivre</h3><p>Relire les événements selon les autorisations.</p></article><article class="workflow-card"><strong>04</strong><h3>Conserver</h3><p>Retrouver l'historique sans le mélanger à la journée suivante.</p></article></div>
+      <p class="workflow-note"><b>Important :</b> l'isolation des chronologies entre journées fait actuellement l'objet de corrections. Le parcours présenté est un objectif produit, pas une garantie de fonctionnement en production.</p>
+    </div></section>
+    <section class="section container" id="protection">
+      <div class="section-head"><div><span class="kicker">03 / CONFIANCE ET LIMITES</span><h2>La traçabilité<br>avant les promesses.</h2></div><p>La confidentialité et l'intégrité des journaux ne se résument pas à une interface. Elles nécessitent des contrôles et des vérifications continues.</p></div>
+      <div class="safety-grid"><div class="safety-panel"><h3>Une vitrine publique. Un logiciel privé.</h3><p>Cette page présente le projet, sans ouvrir d'accès à l'application. Aucun compte, journal d'intervention, fichier opérationnel ou position réelle n'est hébergé ici. Les écrans illustrés sont des compositions fictives.</p></div><div class="safety-list"><div><strong>Accès encadré</strong> — seuls les utilisateurs habilités peuvent accéder au logiciel privé.</div><div><strong>Événements traçables</strong> — historique et corrections sont évalués dans le pilote.</div><div><strong>Pas de certitude artificielle</strong> — une adresse calculée reste une estimation si sa fiabilité n'est pas établie.</div><div><strong>Statut transparent</strong> — aucune homologation ni conformité globale n'est annoncée.</div></div></div>
+      <a class="more-link" href="SECURITE.md">SÉCURITÉ ET LIMITES <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="section container" id="evolution">
+      <div class="section-head"><div><span class="kicker">04 / JOURNAL DES AVANCÉES</span><h2>Un projet qui avance.<br>Étape par étape.</h2></div><p>Les versions sont évaluées avant publication. Les essais locaux ne doivent pas être confondus avec des fonctions disponibles pour les utilisateurs.</p></div>
+      <div class="update-list">
+        <article class="update"><time datetime="2026-10-24">24 OCT. 2026</time><div><strong>Une identité TRACE cohérente</strong><p>La vitrine adopte le langage visuel des maquettes : bleu nuit, slash rouge, modules d'action et fil CHRONO.</p></div><span class="update-label done">VITRINE PUBLIÉE</span></article>
+        <article class="update"><time datetime="2026-10-24">24 OCT. 2026</time><div><strong>Adresses et numéros indicatifs</strong><p>Des essais locaux étudient comment proposer un numéro lorsque les données géographiques le permettent, en affichant les incertitudes.</p></div><span class="update-label">EN ÉVALUATION</span></article>
+        <article class="update"><time datetime="2026-10-24">24 OCT. 2026</time><div><strong>Historique des journées</strong><p>Des correctifs sont étudiés pour séparer les journaux successifs sans perdre les événements antérieurs.</p></div><span class="update-label">EN COURS</span></article>
+      </div>
+      <a class="more-link" href="CHANGELOG.md">TOUTES LES AVANCÉES <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="section container" id="questions">
+      <div class="section-head"><div><span class="kicker">05 / QUESTIONS FRÉQUENTES</span><h2>Ce qu'il faut savoir.</h2></div></div>
+      <div class="faq-list">
+        <details><summary>Peut-on utiliser TRACE depuis cette page ?</summary><p>Non. Cette vitrine GitHub Pages n'offre aucun accès au logiciel privé ni aux journaux. Elle sert uniquement à présenter le projet et ses avancées.</p></details>
+        <details><summary>Les informations sur les écrans sont-elles réelles ?</summary><p>Non. La chronologie, les horaires, le nom de l'équipage et toutes les actions visibles dans l'illustration sont fictifs.</p></details>
+        <details><summary>TRACE est-il un logiciel officiel ou homologué ?</summary><p>Non. TRACE est présenté ici comme un projet indépendant ; aucune homologation, certification ou validation officielle n'est revendiquée.</p></details>
+        <details><summary>Les fonctions montrées sont-elles toutes disponibles ?</summary><p>Non. Certaines fonctions ont été évaluées sur des données fictives, et d'autres sont encore à l'étude. Consultez la feuille de route pour les distinctions.</p></details>
+      </div>
+      <a class="more-link" href="FAQ.md">LIRE LA FAQ <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="closing"><div class="container closing-inner"><div><span class="kicker">TRACE / LA SUITE</span><h2>Une trace fiable<br><em>à chaque action.</em></h2><p>Suivre les choix, les limites et les avancées d'un projet orienté terrain.</p></div><a class="btn btn-red" href="ROADMAP.md">FEUILLE DE ROUTE <span aria-hidden="true">→</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><div><a class="logo" href="#accueil">TRACE<b>/</b></a><p>TERRAIN · ACTION · MÉMOIRE</p><small>© 2026 TRACE. Projet indépendant, vitrine publique sans données opérationnelles.</small></div><div class="footer-links"><a href="README.md">Présentation</a><a href="ROADMAP.md">Feuille de route</a><a href="CHANGELOG.md">Avancées</a><a href="SECURITE.md">Sécurité</a><a href="PUBLISHING.md">Publication</a></div></div></footer>
+</body>
+</html>
