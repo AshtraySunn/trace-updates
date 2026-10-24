@@ -1,6 +1,6 @@
-# TRACE — Chaque action compte.
+# TRACE / La chronologie au service du terrain.
 
-**Journal de bord · Chronologie · Clarté**
+**TERRAIN · ACTION · MÉMOIRE**
 
 TRACE est un projet logiciel indépendant en développement visant à organiser des journées d'activité et à présenter des chronologies claires et consultables.
 
