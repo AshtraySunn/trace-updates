@@ -65,6 +65,73 @@
     @media(max-width:390px){.demo-phones{transform:scale(.62);margin-right:-256px;margin-bottom:-195px}}
 
    .hero-trace{display:inline-block;font-size:.8em;font-weight:1000;font-style:italic;letter-spacing:-.085em}.hero-slash{color:var(--red)}
+  
+    /* v3 — aperçus sur des supports distincts, sans empilement ou compression */
+    .hero-grid{grid-template-columns:minmax(0,1fr) minmax(350px,.82fr);gap:60px;min-height:0;padding:88px 0 82px;align-items:center}
+    .hero h1{font-size:clamp(42px,4.2vw,65px);line-height:1.12;max-width:660px;margin:24px 0}
+    .hero h1 em{color:#f6f9ff;font-style:normal}
+    .hero-trace{font-size:.82em;margin-bottom:10px;display:inline-block}
+    .hero-slash{color:var(--red)}
+    .hero-lead{font-size:16px;line-height:1.8}
+    .hero-phone{min-height:0;display:flex;flex-direction:column;align-items:center;padding:12px 0;overflow:visible}
+    .hero-phone:before{width:395px;height:395px}
+    .hero-phone .demo-home{transform:none;z-index:2;width:350px;max-width:100%;border-radius:35px;padding:9px 7px 12px}
+    .hero-phone .demo-home:before{left:35%;right:35%}
+    .hero-phone .demo-screen{height:615px;min-height:615px}
+    .hero-phone .demo-toolbar .demo-logo{font-size:25px}
+    .hero-phone .demo-crew{margin:3px 10px 13px;padding:11px}
+    .hero-phone .demo-crew strong{font-size:12px}
+    .hero-phone .demo-tabs{margin:0 10px 13px}
+    .hero-phone .demo-tabs span,.hero-phone .demo-tabs b{font-size:9px}
+    .hero-phone .demo-mode{margin:0 10px 12px}
+    .hero-phone .demo-mode strong{font-size:18px}
+    .hero-phone .demo-actions{margin:0 10px;gap:9px}
+    .hero-phone .demo-tile{height:89px}
+    .hero-phone .demo-tile b{font-size:28px}
+    .hero-phone .demo-tile strong{font-size:10px}
+    .hero-phone .demo-dock{margin-top:auto;padding:15px 8px 12px}
+    .hero-phone .demo-dock>div{font-size:9px}
+    .hero-phone .showcase-note{font-size:10px;margin-top:20px;line-height:1.5;color:#a3b9cb}
+    .gallery-section{background:radial-gradient(ellipse at 45% 10%,#10355057,transparent 55%),#051320}
+    .gallery-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:45px}
+    .gallery-card{min-width:0;border:1px solid #2b485e;border-radius:16px;background:#081b2d;padding:24px 25px 30px;display:flex;align-items:center;flex-direction:column}
+    .gallery-label{width:100%;display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:22px}
+    .gallery-label span{font-size:12px;color:var(--red);font-weight:900;letter-spacing:.14em}
+    .gallery-label strong{font-size:12px;color:#a9c1d6}
+    .gallery-card .demo-frame{transform:none;width:340px;max-width:100%;border-radius:34px;padding:10px 8px 12px;box-shadow:0 20px 52px #000a}
+    .gallery-card .demo-screen{height:620px;min-height:620px}
+    .gallery-card .demo-login .login-visual{padding:50px 15px 32px}
+    .gallery-card .demo-login .login-visual .demo-logo{font-size:43px}
+    .gallery-card .demo-login .demo-subtitle{font-size:7px}
+    .gallery-card .demo-login .login-visual p{font-size:9px}
+    .gallery-card .demo-login .login-panel{margin:18px 12px 0;padding:17px 15px 20px}
+    .gallery-card .demo-login .login-panel>strong{font-size:20px}
+    .gallery-card .demo-login .login-panel>small{font-size:8px}
+    .gallery-card .demo-login .login-panel label{font-size:12px}
+    .gallery-card .demo-login .demo-input{font-size:11px;padding:13px 10px}
+    .gallery-card .demo-login .demo-button{font-size:13px}
+    .gallery-card .demo-login .login-footer{font-size:9px}
+    .gallery-card .chrono-head{padding:24px 12px 18px}
+    .gallery-card .chrono-head strong{font-size:17px}
+    .gallery-card .chrono-head small{font-size:9px}
+    .gallery-card .chrono-head .demo-online{font-size:9px;padding:5px 8px}
+    .gallery-card .chrono-events{padding:22px 12px 0}
+    .gallery-card .chrono-entry{grid-template-columns:42px minmax(0,1fr);column-gap:13px;padding:0 0 18px}
+    .gallery-card .chrono-entry time{font-size:11px;white-space:nowrap}
+    .gallery-card .chrono-entry>div{padding-left:9px}
+    .gallery-card .chrono-entry:after{left:48px}
+    .gallery-card .chrono-entry:before{left:43px}
+    .gallery-card .chrono-entry b{font-size:12px;white-space:nowrap}
+    .gallery-card .chrono-entry p{font-size:10px;line-height:1.55;overflow-wrap:normal;word-break:normal}
+    .gallery-card .chrono-vocal{font-size:10px;padding:10px 8px}
+    .gallery-card .chrono-compose{padding:14px 12px}
+    .gallery-card .chrono-compose>span{font-size:11px;padding:11px 8px}
+    .gallery-caption{font-size:13px;text-align:center;color:#afc0d2;line-height:1.65;max-width:345px;margin:22px 0 0}
+    .gallery-disclaimer{text-align:center;font-size:10px;letter-spacing:.1em;color:#85a8c3;font-weight:750;margin:28px 0 0}
+    @media(max-width:1000px){.hero-grid{grid-template-columns:1fr;gap:34px;padding:75px 0}.hero h1{font-size:clamp(42px,7vw,67px)}.hero-phone{padding:25px 0}.gallery-layout{gap:14px}.gallery-card{padding:18px 10px 26px}.gallery-card .demo-frame{width:325px}}
+    @media(max-width:735px){.gallery-layout{grid-template-columns:1fr;gap:23px;max-width:525px;margin:34px auto 0}.gallery-card{padding:20px 13px 28px}.gallery-card .demo-frame{width:340px}.gallery-label{padding:0 4px}.gallery-section{padding:70px 0}.hero-grid{gap:17px;padding:56px 0 63px}.hero h1{font-size:clamp(40px,9vw,60px)}}
+    @media(max-width:390px){.hero-phone .demo-home{width:320px}.gallery-card .demo-frame{width:310px}.gallery-card .chrono-entry b{font-size:11px}.gallery-card .chrono-entry p{font-size:9px}.hero-phone .demo-tile strong{font-size:9px}.gallery-section .section-head h2{font-size:34px}}
+    
   </style>
 </head>
 <body>
@@ -89,17 +156,8 @@
           </div>
           <p class="hero-disclaimer">Présentation publique uniquement. L'application n'est pas accessible depuis ce site. Illustration d'interface et événements entièrement fictifs.</p>
         </div>
-        <div class="showcase" id="interface" aria-label="Trois interfaces TRACE reconstituées avec des données fictives">
-          <div class="demo-phones">
-            <article class="demo-frame demo-login" aria-label="Aperçu fictif de la connexion">
-              <div class="demo-screen">
-                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
-                <div class="login-visual"><div class="demo-logo">TRACE<span>/</span></div><div class="demo-subtitle">TRAITEMENT RAPIDE DES ACTIONS<br>ET CHRONOLOGIE D'ÉQUIPAGE</div><p>LA CHRONOLOGIE AU SERVICE DU TERRAIN.</p></div>
-                <div class="login-panel"><strong>Connexion</strong><small>ACCÈS RÉSERVÉ AUX PERSONNELS HABILITÉS</small><label>Matricule</label><div class="demo-input">◌ &nbsp; Votre matricule</div><label>Code d'accès</label><div class="demo-input">♙ &nbsp; ••••••••••</div><div class="demo-button">Se connecter &nbsp; →</div></div>
-                <div class="login-footer">UNE TRACE FIABLE À CHAQUE ACTION.</div>
-              </div>
-            </article>
-            <article class="demo-frame demo-home" aria-label="Aperçu fictif du terrain">
+        <div class="showcase hero-phone" aria-label="Aperçu reconstitué de l'interface Terrain TRACE">
+          <article class="demo-frame demo-home" aria-label="Aperçu fictif du terrain">
               <div class="demo-screen">
                 <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
                 <div class="demo-toolbar"><div class="demo-logo">TRACE<span>/</span></div><span class="demo-online">● En ligne</span><span class="demo-gear">⚙</span></div>
@@ -117,6 +175,28 @@
                 <div class="demo-dock"><div><span>▣</span>PHOTO</div><div><i aria-hidden="true">♩</i>MICRO</div><div><span>▤</span>CHRONO</div></div>
               </div>
             </article>
+          <p class="showcase-note">INTERFACE RECONSTITUÉE · DONNÉES FICTIVES</p>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery-section" id="interface" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head"><div><span class="kicker">01 / APERÇUS DU PRODUIT</span><h2 id="gallery-title">Une interface pensée<br>pour le terrain.</h2></div><p>Captures reconstituées à partir de l'identité visuelle réelle de TRACE. Les événements, lieux et utilisateurs de démonstration sont fictifs.</p></div>
+        <div class="gallery-layout">
+          <div class="gallery-card">
+            <div class="gallery-label"><span>01 / CONNEXION</span><strong>Accès privé</strong></div>
+            <article class="demo-frame demo-login" aria-label="Aperçu fictif de la connexion">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="login-visual"><div class="demo-logo">TRACE<span>/</span></div><div class="demo-subtitle">TRAITEMENT RAPIDE DES ACTIONS<br>ET CHRONOLOGIE D'ÉQUIPAGE</div><p>LA CHRONOLOGIE AU SERVICE DU TERRAIN.</p></div>
+                <div class="login-panel"><strong>Connexion</strong><small>ACCÈS RÉSERVÉ AUX PERSONNELS HABILITÉS</small><label>Matricule</label><div class="demo-input">◌ &nbsp; Votre matricule</div><label>Code d'accès</label><div class="demo-input">♙ &nbsp; ••••••••••</div><div class="demo-button">Se connecter &nbsp; →</div></div>
+                <div class="login-footer">UNE TRACE FIABLE À CHAQUE ACTION.</div>
+              </div>
+            </article>
+            <p class="gallery-caption">L'écran d'accueil d'une application réservée aux utilisateurs habilités.</p>
+          </div>
+          <div class="gallery-card">
+            <div class="gallery-label"><span>02 / CHRONO</span><strong>Journal d'activité</strong></div>
             <article class="demo-frame demo-chrono" aria-label="Aperçu fictif de la chronologie à Paris">
               <div class="demo-screen">
                 <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
@@ -132,9 +212,10 @@
               </div>
               </div>
             </article>
+            <p class="gallery-caption">Exemples d'événements et de rues à Paris, sans aucun journal opérationnel.</p>
           </div>
-          <p class="showcase-note">INTERFACES RECONSTITUÉES · ÉVÉNEMENTS ET LOCALISATIONS FICTIFS · AUCUNE DONNÉE OPÉRATIONNELLE</p>
-      </div>
+        </div>
+        <p class="gallery-disclaimer">AUCUN MATRICULE RÉEL · AUCUNE AFFECTATION · AUCUNE GÉOLOCALISATION OPÉRATIONNELLE</p>
       </div>
     </section>
     <div class="microcopy" id="vision"><div class="container">
