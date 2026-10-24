@@ -33,6 +33,38 @@
     @media(max-width:780px){.nav{display:none}.header-content{min-height:72px}.hero-grid{grid-template-columns:1fr;padding:65px 0 50px;gap:15px}.hero h1{max-width:650px}.showcase{min-height:630px}.floating-chrono{right:9%;bottom:0}.phone{width:330px}.section{padding:72px 0}.section-head{display:block}.section-head p{margin:20px 0 0}.feature-grid{grid-template-columns:repeat(2,1fr)}.workflow-grid{grid-template-columns:repeat(2,1fr)}.safety-grid{grid-template-columns:1fr}.closing-inner{display:block}.closing .btn{margin-top:26px}.footer-inner{display:block}.footer-links{margin-top:25px}}
     @media(max-width:500px){.container{width:min(100% - 32px,1200px)}.logo{font-size:25px}.header-cta{font-size:10px;padding:9px 11px}.hero-grid{padding-top:49px}.hero h1{font-size:clamp(42px,11vw,58px)}.hero-lead{font-size:15px}.hero-signature{font-size:9px;letter-spacing:.22em}.hero-actions{gap:10px}.btn{width:100%}.showcase{min-height:590px;overflow:hidden;margin:0 -16px}.phone{width:300px;transform:rotate(-2deg) translateX(-15px)}.floating-chrono{width:177px;padding:11px;bottom:4px;right:1%;transform:rotate(2deg)}.float-head{font-size:9px}.microcopy .container{grid-template-columns:1fr}.microcopy .item,.microcopy .item:first-child{padding:12px 0;border-right:none;border-bottom:1px solid #29445b}.microcopy .item:last-child{border:none}.feature-grid{grid-template-columns:1fr}.feature{min-height:0}.workflow-grid{grid-template-columns:1fr 1fr;gap:9px}.workflow-card{padding:16px 12px}.workflow-card h3{font-size:14px}.workflow-card p{font-size:11px}.safety-panel{padding:23px}.update{grid-template-columns:1fr;gap:8px;padding:20px}.update-label{text-align:left}.closing{padding:58px 0}.footer-links{gap:14px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+    /* TRACE — galerie fidèle à la composition de l'interface mobile ; données 100 % fictives. */
+    .hero-grid{grid-template-columns:.8fr 1.2fr;gap:18px}
+    .hero h1{font-size:clamp(43px,4.9vw,71px)}
+    .showcase{min-height:665px;flex-direction:column;justify-content:center}
+    .showcase:before{width:500px;height:500px}
+    .demo-phones{position:relative;z-index:1;display:grid;grid-template-columns:.87fr 1.07fr .91fr;gap:8px;align-items:center;width:100%;max-width:710px}
+    .demo-frame{min-width:0;background:#020810;border:4px solid #294257;border-radius:29px;padding:8px 6px 9px;box-shadow:0 25px 55px #000b,inset 0 0 0 1px #62869b66;position:relative;overflow:hidden}
+    .demo-frame:before{content:"";position:absolute;top:2px;left:32%;right:32%;height:12px;background:#01050a;border-radius:0 0 13px 13px;z-index:2}
+    .demo-home{z-index:3;transform:scale(1.065);box-shadow:0 25px 70px #000e,0 0 36px #0c55821a}
+    .demo-login{transform:rotate(-3deg) translateX(5px)}.demo-chrono{transform:rotate(3deg) translateX(-5px)}
+    .demo-screen{border-radius:22px;background:#040e1c;min-height:550px;height:550px;display:flex;flex-direction:column;overflow:hidden}
+    .demo-status{display:flex;justify-content:space-between;align-items:center;padding:13px 10px 5px;font-weight:850;font-size:8px;letter-spacing:.03em;color:#edf5fc;flex-shrink:0}
+    .demo-logo{font-weight:1000;font-style:italic;letter-spacing:-.085em;white-space:nowrap;font-size:23px;color:#fff}.demo-logo span{color:#ff1038;font-size:1.3em;margin-left:1px}
+    .demo-subtitle{font-size:5px;letter-spacing:.14em;color:#dce7f1;line-height:1.8}
+    .login-visual{padding:35px 9px 22px;text-align:center;background:radial-gradient(ellipse at top,#1b314c 0,transparent 78%);border-bottom:1px solid #183045}.login-visual .demo-logo{font-size:29px}.login-visual p{font-size:7px;letter-spacing:.13em;font-weight:750;line-height:1.7;margin:18px -4px 0;color:#c2d2e5}
+    .login-panel{margin:15px 8px 0;padding:12px 10px 14px;background:#081726;border:1px solid #1b3549;border-radius:12px;display:flex;flex-direction:column;gap:5px}.login-panel>strong{font-size:13px}.login-panel>small{font-size:6px;letter-spacing:.09em;color:#91a9c0}.login-panel label{font-size:9px;font-weight:700;color:#cad9e7;margin-top:8px}.demo-input{border:1px solid #2b445a;border-radius:7px;font-size:8px;color:#95aabc;padding:11px 7px;background:#020b15}.demo-button{background:#441a24;border:1px solid #922a3d;text-align:center;border-radius:7px;padding:10px;font-weight:800;font-size:10px;margin-top:10px}.login-footer{font-size:7px;letter-spacing:.15em;font-weight:700;text-align:center;color:#91a8bc;margin:auto 0 23px}
+    .demo-toolbar{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:5px 8px 10px}.demo-toolbar .demo-logo{font-size:21px}.demo-online{font-size:7px;color:#37d49d;white-space:nowrap;border:1px solid #163e41;border-radius:22px;padding:4px 6px}.demo-gear{font-size:18px;color:#a1b7ca}
+    .demo-crew{margin:0 8px 12px;background:#091929;border:1px solid #2b4052;border-radius:8px;padding:9px 9px;display:flex;align-items:center;justify-content:space-between;gap:4px}.demo-crew strong{font-size:9px;letter-spacing:.01em}.demo-active{font-size:7px;color:#25d09a;white-space:nowrap}
+    .demo-tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;margin:0 8px 10px;background:#020914;border:1px solid #26374a;border-radius:8px;padding:4px 3px}.demo-tabs span,.demo-tabs b{text-align:center;padding:5px 0;font-size:7px;white-space:nowrap;color:#8fa4bc;font-weight:800}.demo-tabs b{border-radius:6px;background:#1e4476;color:white;border:1px solid #3c6dac}
+    .demo-mode{margin:0 8px 10px;border:1px solid #2b4760;border-radius:8px;padding:10px 10px;background:radial-gradient(ellipse at right,#173f6344,transparent 80%),#0a1a2a}.demo-mode small{display:block;font-size:7px;color:#98acc3;letter-spacing:.14em;font-weight:800}.demo-mode small span{color:#ff1543;font-size:12px}.demo-mode strong{font-size:13px;line-height:1.4}
+    .demo-actions{margin:0 8px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.demo-tile{border:1px solid #2d4b63;min-width:0;background:radial-gradient(ellipse at top,#17293b88,#050e1a);border-radius:11px;height:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px}.demo-tile b{font-size:25px;line-height:1}.demo-tile strong{font-size:8px;white-space:nowrap;letter-spacing:-.01em}.dt-blue b{color:#95c5ff}.dt-green b{color:#42c69f}.dt-red b{color:#ff5371}.dt-orange b{color:#ffa169}.dt-gold b{color:#ffc354}.dt-violet b{color:#b496e7}.dt-red{border-color:#603646}.dt-orange{border-color:#5e433b}.dt-gold{border-color:#625534}.dt-violet{border-color:#46415d}
+    .demo-dock{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:11px 6px 10px;margin-top:auto;border-top:1px solid #192d42;background:#030d1b}.demo-dock>div{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#afbed0;font-size:7px;font-weight:850;letter-spacing:.12em;gap:5px}.demo-dock>div>span{font-size:21px;line-height:1.3}.demo-dock>div:nth-child(2){color:#fff}.demo-dock i{font-style:normal;font-size:20px;color:white;background:#df2240;box-shadow:0 0 0 3px #753343;padding:2px;display:grid;place-items:center;width:42px;height:42px;border-radius:50%}
+    .chrono-head{display:flex;align-items:center;gap:7px;border-bottom:1px solid #192c40;padding:15px 8px 12px}.chrono-back{font-size:23px;color:#c9d3e1}.chrono-head>div{flex:1;min-width:0}.chrono-head strong{display:block;font-size:12px;letter-spacing:.22em}.chrono-head small{display:block;font-size:6px;color:#a6bbcd;letter-spacing:.07em}.chrono-head .demo-online{font-size:6px}
+    .chrono-events{padding:23px 6px 2px 9px;flex:1;overflow:hidden}.chrono-entry{display:grid;grid-template-columns:36px minmax(0,1fr);column-gap:11px;position:relative;padding:0 0 15px}.chrono-entry:after{content:"";position:absolute;left:41px;top:4px;bottom:-4px;border-left:1px solid #3b5269}.chrono-entry:last-child:after{bottom:13px}.chrono-entry:before{content:"";position:absolute;left:36px;top:5px;width:9px;height:9px;border-radius:50%;background:#df2444;z-index:1}.chrono-entry time{font-size:9px;font-weight:800;color:#d5e0eb;line-height:1.5}.chrono-entry>div{padding-left:7px;min-width:0}.chrono-entry b{font-size:9px;letter-spacing:.005em;display:block;line-height:1.6}.chrono-entry p{font-size:7px;color:#aebed0;margin:3px 0 0;line-height:1.55;overflow-wrap:anywhere}.chrono-entry p span{color:#f62950;margin-right:2px;font-size:10px}.chrono-vocal{border:1px solid #2c455d;border-radius:7px;background:#0b1b2d;color:#c6d7e6;font-size:7px;padding:9px 5px;margin-top:8px}.chrono-vocal span{float:right;color:#97b3cd}.chrono-compose{display:flex;gap:5px;align-items:center;padding:13px 7px;border-top:1px solid #182f44}.chrono-compose>span{flex:1;border:1px solid #2c4359;border-radius:6px;color:#7e99b2;background:#030e1b;font-size:8px;padding:12px 5px;white-space:nowrap}.chrono-compose b{background:#631b2b;border:1px solid #b12743;border-radius:7px;color:white;padding:8px 9px;font-size:16px}
+    .showcase-note{position:relative;z-index:5;margin:20px auto 0;color:#91aec5;text-align:center;font-size:8px;letter-spacing:.09em;font-weight:800;max-width:640px;line-height:1.7}
+    @media(max-width:1120px){.hero-grid{grid-template-columns:1fr}.hero h1{max-width:720px}.hero-lead{max-width:680px}.showcase{min-height:auto;padding:30px 0 20px}.demo-phones{max-width:680px}.demo-frame{border-radius:29px}}
+    @media(max-width:750px){.demo-phones{max-width:590px}.demo-screen{height:480px;min-height:480px}.demo-tile{height:73px}.demo-actions{gap:5px}.demo-crew{margin-bottom:7px}.demo-mode{margin-bottom:7px}.chrono-entry{padding-bottom:9px}}
+    @media(max-width:580px){.showcase{padding:15px 0 30px;overflow:hidden;margin:0 -16px}.demo-phones{grid-template-columns:1fr 1.05fr .96fr;width:690px;transform:scale(.73);transform-origin:top left;margin-right:-205px;margin-bottom:-150px}.demo-screen{height:550px;min-height:550px}.demo-tile{height:86px}.showcase-note{font-size:8px;max-width:340px;margin-top:15px;padding:0 12px}.hero-grid{padding-bottom:45px}}
+    @media(max-width:390px){.demo-phones{transform:scale(.62);margin-right:-256px;margin-bottom:-195px}}
+
+   .hero-trace{display:inline-block;font-size:.8em;font-weight:1000;font-style:italic;letter-spacing:-.085em}.hero-slash{color:var(--red)}
   </style>
 </head>
 <body>
@@ -48,7 +80,7 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow"><span class="redline"></span> PROJET INDÉPENDANT · PILOTE PRIVÉ</div>
-          <h1>La chronologie<br>au service <em>du terrain.</em></h1>
+          <h1><span class="hero-trace">TRACE<span class="hero-slash">/</span></span><br>La chronologie<br>au service <em>du terrain.</em></h1>
           <p class="hero-lead">TRACE — <strong>Traitement Rapide des Actions et Chronologie d'Équipage</strong> — est conçu pour saisir les actions, suivre leur déroulement et retrouver un historique clair.</p>
           <div class="hero-signature">TERRAIN &nbsp; / &nbsp; ACTION &nbsp; / &nbsp; MÉMOIRE</div>
           <div class="hero-actions">
@@ -57,31 +89,50 @@
           </div>
           <p class="hero-disclaimer">Présentation publique uniquement. L'application n'est pas accessible depuis ce site. Illustration d'interface et événements entièrement fictifs.</p>
         </div>
-        <div class="showcase" id="interface" aria-label="Illustration fictive de l'interface TRACE">
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="statusbar"><span>9:41</span><span>●●● ▰</span></div>
-              <div class="appbar"><div><div class="mini-logo">TRACE<span>/</span></div><div class="app-tag">TERRAIN / ACTION / MÉMOIRE</div></div><span class="dots" aria-hidden="true">● · ⚙</span></div>
-              <div class="crew"><div><strong>Équipage fictif</strong><span class="sub">Journée d'exemple</span></div><div class="online">Actif</div></div>
-              <div class="tabs" aria-label="Modes illustratifs"><span class="selected">MO</span><span>SO</span><span>VO</span><span>SECU</span><span>+</span></div>
-              <div class="mode"><small>MODE /</small><strong>Terrain — MO</strong></div>
-              <div class="actions" aria-hidden="true">
-                <div class="act blue"><span class="sym">⌖</span><span class="txt">IMPLANTATION</span></div>
-                <div class="act green"><span class="sym">◎</span><span class="txt">LOCALISATION</span></div>
-                <div class="act red"><span class="sym">●●</span><span class="txt">ACTION</span></div>
-                <div class="act orange"><span class="sym">↗</span><span class="txt">INTERVENTION</span></div>
-                <div class="act gold"><span class="sym">◆</span><span class="txt">ÉVÉNEMENT</span></div>
-                <div class="act violet"><span class="sym">▰</span><span class="txt">COMPTE RENDU</span></div>
+        <div class="showcase" id="interface" aria-label="Trois interfaces TRACE reconstituées avec des données fictives">
+          <div class="demo-phones">
+            <article class="demo-frame demo-login" aria-label="Aperçu fictif de la connexion">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="login-visual"><div class="demo-logo">TRACE<span>/</span></div><div class="demo-subtitle">TRAITEMENT RAPIDE DES ACTIONS<br>ET CHRONOLOGIE D'ÉQUIPAGE</div><p>LA CHRONOLOGIE AU SERVICE DU TERRAIN.</p></div>
+                <div class="login-panel"><strong>Connexion</strong><small>ACCÈS RÉSERVÉ AUX PERSONNELS HABILITÉS</small><label>Matricule</label><div class="demo-input">◌ &nbsp; Votre matricule</div><label>Code d'accès</label><div class="demo-input">♙ &nbsp; ••••••••••</div><div class="demo-button">Se connecter &nbsp; →</div></div>
+                <div class="login-footer">UNE TRACE FIABLE À CHAQUE ACTION.</div>
               </div>
-              <div class="dock" aria-hidden="true"><div><span class="dock-icon">▣</span>PHOTO</div><div class="micro"><span class="dock-icon"><svg aria-hidden="true" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4m-4 0h8"/></svg></span>MICRO</div><div><span class="dock-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 3V6a2 2 0 0 1 2-2Z"/></svg></span>CHRONO</div></div>
-              <div class="phone-bottom"><span>⌂ Accueil</span><span>◇ Carte</span><b>◉ Chrono</b><span>⋮ Plus</span></div>
-            </div>
+            </article>
+            <article class="demo-frame demo-home" aria-label="Aperçu fictif du terrain">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="demo-toolbar"><div class="demo-logo">TRACE<span>/</span></div><span class="demo-online">● En ligne</span><span class="demo-gear">⚙</span></div>
+                <div class="demo-crew"><strong>ÉQUIPAGE DÉMO</strong><span class="demo-active">● ACTIF</span></div>
+                <div class="demo-tabs"><b>MO</b><span>SO</span><span>VO</span><span>SECU</span><span>SERV</span><span>PERSO</span></div>
+                <div class="demo-mode"><small>MODE <span>/</span></small><strong>Maintien de l'ordre</strong></div>
+                <div class="demo-actions">
+                  <div class="demo-tile dt-blue"><b>⌖</b><strong>IMPLANTATION</strong></div>
+                  <div class="demo-tile dt-green"><b>◎</b><strong>LOCALISATION</strong></div>
+                  <div class="demo-tile dt-red"><b>⌃</b><strong>ASSAUT</strong></div>
+                  <div class="demo-tile dt-orange"><b>⌗</b><strong>INTERPELLATION</strong></div>
+                  <div class="demo-tile dt-gold"><b>▣</b><strong>GRENADE</strong></div>
+                  <div class="demo-tile dt-violet"><b>✣</b><strong>LBD</strong></div>
+                </div>
+                <div class="demo-dock"><div><span>▣</span>PHOTO</div><div><i aria-hidden="true">♩</i>MICRO</div><div><span>▤</span>CHRONO</div></div>
+              </div>
+            </article>
+            <article class="demo-frame demo-chrono" aria-label="Aperçu fictif de la chronologie à Paris">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>●●● 4G ▰</span></div>
+                <div class="chrono-head"><span class="chrono-back">‹</span><div><strong>CHRONO</strong><small>EXEMPLE FICTIF · PARIS</small></div><span class="demo-online">● En ligne</span></div>
+                <div class="chrono-events">
+                  <div class="chrono-entry"><time>09:15</time><div><b>IMPLANTATION</b><p><span>⌖</span> Rue de Rivoli, 75001 Paris</p></div></div>
+                  <div class="chrono-entry"><time>09:26</time><div><b>INTERPELLATION</b><p><span>⌖</span> Place de la République, Paris</p></div></div>
+                  <div class="chrono-entry"><time>10:12</time><div><b>ASSAUT</b><p><span>⌖</span> Boulevard Saint-Germain, 75005 Paris</p><div class="chrono-vocal">▶ &nbsp; Vocal <span>0:02</span></div></div>
+                  <div class="chrono-entry"><time>10:43</time><div><b>GRENADE MP7</b><p><span>⌖</span> Avenue des Champs-Élysées, Paris</p></div></div>
+                  <div class="chrono-entry"><time>11:08</time><div><b>IMPLANTATION</b><p><span>⌖</span> Avenue de Clichy, 75017 Paris</p></div></div>
+                </div>
+                <div class="chrono-compose"><span>Écrire un message…</span><b>↑</b></div>
+              </div>
+            </article>
           </div>
-          <div class="floating-chrono" aria-hidden="true">
-            <div class="float-head">CHRONO <span>EXEMPLE FICTIF</span></div>
-            <div class="timeline-preview"><div><small>09:24</small><strong>Implantation</strong><p>Point de rendez-vous fictif</p></div><div><small>09:17</small><strong>Compte rendu</strong><p>Note ajoutée au journal</p></div><div><small>08:56</small><strong>Photo ajoutée</strong><p>Média d'illustration</p></div></div>
-          </div>
-        </div>
+          <p class="showcase-note">INTERFACES RECONSTITUÉES · ÉVÉNEMENTS ET LOCALISATIONS FICTIFS · AUCUNE DONNÉE OPÉRATIONNELLE</p>
       </div>
     </section>
     <div class="microcopy" id="vision"><div class="container">
